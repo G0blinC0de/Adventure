@@ -1,8 +1,8 @@
-# _Red's Portfolio_
+# _Adventure Time_
 
 #### By _**Red Williams**_
 
-#### _My Portfolio_
+#### _Our Adventure Together_
 
 ## Technologies Used
 
@@ -10,21 +10,22 @@
 * _GitBash_
 * _HTML_
 * _CSS_
+* _Javascript_
 
 ## Description
 
-A website to host my Programming Portfolio
+A website for Mad Libs Adventures
 
 ## Setup/Installation Requirements
 
 * _Navigate to URL_
-* _https://g0blinc0de.github.io/RedPortfolio/_
+* _https://g0blinc0de.github.io/Adventure/_
 
 
 
 ## Known Bugs
 
-* Currently working on centering information
+* 
 
 
 ## License
