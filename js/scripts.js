@@ -1,6 +1,9 @@
 window.onload = function() {
+  console.log("Script Executing!")
     let form = document.querySelector("form");
     form.onsubmit = function(event) {
+      event.preventDefault();
+      console.log("Submit form successfully reached");
       // in this section we get the value for each form input
       const person1Input = document.getElementById("person1Input").value;
       const person2Input = document.getElementById("person2Input").value;
@@ -22,6 +25,6 @@ window.onload = function() {
       
       document.querySelector("div#story").removeAttribute("class");
   
-      event.preventDefault();
+      
     };
   };
