@@ -1,9 +1,21 @@
 window.onload = function() {
-  console.log("Script Executing!")
-    let form = document.querySelector("form");
+  
+  let form = document.getElementById("shoutForm");
     form.onsubmit = function(event) {
       event.preventDefault();
-      console.log("Submit form successfully reached");
+      let phrase = document.getElementById("phrase").value;
+      
+      const shoutSpan = document.querySelector("span#shout");
+  
+      shoutSpan.innerText = phrase.toUpperCase();
+        reset();
+    };
+
+
+   /* let form = document.querySelector("form");
+    form.onsubmit = function(event) {
+      event.preventDefault();
+    
       // in this section we get the value for each form input
       const person1Input = document.getElementById("person1Input").value;
       const person2Input = document.getElementById("person2Input").value;
@@ -26,5 +38,8 @@ window.onload = function() {
       document.querySelector("div#story").removeAttribute("class");
   
       
-    };
+    }; */
   };
+  function reset() {
+    document.getElementById("phrase").value = ""
+  }
