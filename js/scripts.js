@@ -1,16 +1,43 @@
-window.onload = function() {
+
   
+  // -- Event Listener Example --
+  window.onload = function() {
+    const shoutForm = function(event) {
+      event.preventDefault();
+      let phrase = document.getElementById("phrase").value;
+      let shoutSpan = document.querySelector("span#shout");
+      shoutSpan.innerText = phrase.toUpperCase();
+    }
+  
+    let form = document.querySelector("form");
+    form.addEventListener("submit", shoutForm);
+    
+    const reset = document.getElementById("reset"); 
+    reset.addEventListener("click", function() {
+      let shoutSpan = document.querySelector("span#shout");
+      shoutSpan.innerText = "_____";
+    });
+    
+
+  };
+  
+
+  // -- Shout Box --
+  /* 
+  window.onload = function() {
   let form = document.getElementById("shoutForm");
     form.onsubmit = function(event) {
       event.preventDefault();
-      let phrase = document.getElementById("phrase").value;
+       let phrase = document.getElementById("phrase").value;
       
       const shoutSpan = document.querySelector("span#shout");
   
       shoutSpan.innerText = phrase.toUpperCase();
         reset();
     };
+      */
 
+      // -- Adventure Mad Libs --
 
    /* let form = document.querySelector("form");
     form.onsubmit = function(event) {
@@ -39,7 +66,10 @@ window.onload = function() {
   
       
     }; */
-  };
+
+    // -- This Function Resets the phrase chatbox window 
+      // -- after the submission has been logged
+   /* };
   function reset() {
     document.getElementById("phrase").value = ""
-  }
+  } */
